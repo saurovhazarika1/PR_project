@@ -1,3 +1,4 @@
+##This code is used to do the PCA in MD trajectories using MDAnalysis for PR system##
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
