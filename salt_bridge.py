@@ -1,3 +1,5 @@
+## this code is used to calculate the salt-bridges##
+##This framwork is already given in the MDAnalysis webpage##
 import MDAnalysis as mda
 from MDAnalysis.analysis import contacts
 
