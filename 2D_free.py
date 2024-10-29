@@ -1,5 +1,4 @@
 ##This code plot the 2D free energy surface with distance between two residues and fraction of native contacts as order parameters##
-##written by Saurov Hazarika##
 
 import MDAnalysis as mda
 import numpy as np
