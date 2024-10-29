@@ -1,5 +1,5 @@
 ##This code produce contacts maps based on Linear Mutual Information##
-##Written by Saurov Hazarika##
+##Written by Saurov Hazarika but some help were taken from ChatGPT##
 
 import MDAnalysis as mda
 import numpy as np
