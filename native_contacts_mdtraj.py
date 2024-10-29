@@ -1,3 +1,5 @@
+##This code calculates the fraction of native contacts using soft cut-off##
+##Written by Saurov Hazarika##
 import numpy as np
 import mdtraj as md
 from itertools import combinations
