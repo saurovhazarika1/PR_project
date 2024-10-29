@@ -13,14 +13,14 @@ b = sys.argv[2]
 Q_frac = np.genfromtxt(a)
 dist = np.genfromtxt(b)
 
-k_B = 0.0019872041  # kcal/mol K
-temperature = 300  
+k_B = 0.0019872041 
+temp = 300  
 
-hist, xedges, yedges = np.histogram2d(Q_frac, dist, bins=100, density=True)
-free_energy = -k_B * temperature * np.log(hist + 1e-10)  
+hist, x, y = np.histogram2d(Q_frac, dist, bins=100, density=True)
+free_energy = -k_B * temp * np.log(hist + 1e-10)  
 
 free_energy = np.ma.masked_invalid(free_energy)
-X, Y = np.meshgrid(xedges[:-1], yedges[:-1])
+X, Y = np.meshgrid(x[:-1], y[:-1])
 
 plt.contourf(X, Y, free_energy, levels=20, cmap='viridis')
 plt.colorbar(label='Free Energy (kcal/mol)')
